@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/saz/colcon_ws/install/realsense_gazebo_plugin/include/**",
+        "/home/saz/colcon_ws/install/linkattacher_msgs/include/**",
+        "/home/saz/colcon_ws/install/gazebo_ros2_control/include/**",
+        "/home/saz/colcon_ws/install/ebot_docking/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/saz/colcon_ws/src/gazebo_ros2_control/include/**",
+        "/home/saz/colcon_ws/src/realsense_gazebo_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

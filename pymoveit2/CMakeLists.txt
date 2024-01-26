@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.5)
+project(pymoveit2)
+
+# Find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+
+# Install Python package
+ament_python_install_package(pymoveit2)
+
+# Install examples
+set(EXAMPLES_DIR examples)
+install(PROGRAMS
+    ${EXAMPLES_DIR}/ex_collision_object.py
+    ${EXAMPLES_DIR}/ex_joint_goal.py
+    ${EXAMPLES_DIR}/ex_pose_goal.py
+    ${EXAMPLES_DIR}/ex_servo.py
+    ${EXAMPLES_DIR}/task1b.py
+    ${EXAMPLES_DIR}/task1b_pose.py
+    ${EXAMPLES_DIR}/task1b_new.py
+    ${EXAMPLES_DIR}/task1b_complete.py
+    ${EXAMPLES_DIR}/servo_test.py
+    ${EXAMPLES_DIR}/task2a.py
+    ${EXAMPLES_DIR}/task3b.py
+    ${EXAMPLES_DIR}/task2a_simple.py
+    ${EXAMPLES_DIR}/task4b.py
+    ${EXAMPLES_DIR}/task4c.py
+    ${EXAMPLES_DIR}/task4c_sequential.py
+    DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY examples/assets
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Setup the project
+ament_package()
